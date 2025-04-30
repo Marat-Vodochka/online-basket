@@ -74,7 +74,7 @@ for (i = 0; i < catalogArr.length; i++) {
 //Блок корзины
 let busketBtnWrapper = document.createElement("div")
 
-//Кнопка карзины 
+//Кнопка карзины fg
 let openBasketBtn = getNewBtn("")
 openBasketBtn.classList.add("basket-btn")
 
