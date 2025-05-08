@@ -175,14 +175,6 @@ body {
     }
 }
 
-body {
-    background-color: #cfd4da;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
 
 .popup {
     font-family: Arial, Helvetica, sans-serif;
