@@ -136,3 +136,55 @@ basket.append(basketList, orderBtn)
 
 busketBtnWrapper.append(openBasketBtn)
 document.body.append(mainHeader, productList, busketBtnWrapper, basket)
+
+const giftArr = [
+  {
+    title: "Скидка 20% на первую покупку в нашем магазине!",
+    icon: "images/discount.svg"
+  },
+  {
+    title: "Скидка 10% на всё!",
+    icon: "images/discount_2.svg"
+  },
+  {
+    title: "Подарок при первой покупке в нашем магазине!",
+    icon: "images/gift.svg"
+  },
+  {
+    title: "Бесплатная доставка для вас!",
+    icon: "images/delivery.svg"
+  },
+  {
+    title: "Сегодня день больших скидок!",
+    icon: "images/discount_3.svg"
+  }
+]
+
+const popupCardEl = document.querySelector(".popup");
+
+function showPopup() {
+  popupCardEl.classList.add("visible");
+  fillPopup()
+}
+
+setTimeout(function () {
+  showPopup();
+}, 3000);
+
+const getTitle = document.querySelector(".popup-description");
+const getIcon = document.querySelector(".popup-image");
+
+function fillPopup() {
+  const index = Math.floor(Math.random() * giftArr.length);
+  const randomGift = giftArr[index];
+
+  getTitle.textContent = randomGift.title;
+  getIcon.src = randomGift.icon;
+}
+
+
+const buttonEl = document.querySelector(".popup-btn");
+
+buttonEl.addEventListener('click', function (e) {
+  popupCardEl.classList.remove("visible");
+});

@@ -174,3 +174,60 @@ body {
         flex-direction: column;
     }
 }
+
+body {
+    background-color: #cfd4da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.popup {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    padding: 0 15px;
+}
+
+.popup.visible {
+    opacity: 1;
+}
+
+.popup-image {
+    width: 60px;
+    height: 60px;
+}
+
+.popup-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popup-description {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.popup-btn {
+    background-color: rgb(89, 193, 89);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+}
