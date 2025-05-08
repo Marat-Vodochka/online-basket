@@ -140,23 +140,23 @@ document.body.append(mainHeader, productList, busketBtnWrapper, basket)
 const giftArr = [
   {
     title: "Скидка 20% на первую покупку в нашем магазине!",
-    icon: "images/discount.svg"
+    icon: "img/discount.svg"
   },
   {
     title: "Скидка 10% на всё!",
-    icon: "images/discount_2.svg"
+    icon: "img/discount_2.svg"
   },
   {
     title: "Подарок при первой покупке в нашем магазине!",
-    icon: "images/gift.svg"
+    icon: "img/gift.svg"
   },
   {
     title: "Бесплатная доставка для вас!",
-    icon: "images/delivery.svg"
+    icon: "img/delivery.svg"
   },
   {
     title: "Сегодня день больших скидок!",
-    icon: "images/discount_3.svg"
+    icon: "img/discount_3.svg"
   }
 ]
 
